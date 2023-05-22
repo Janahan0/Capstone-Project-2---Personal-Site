@@ -1,0 +1,320 @@
+/**/
+/**/
+/*Fonts*/
+h1 {
+    font-family: 'Lora', serif;
+    color: rgb(246, 239, 222);
+
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Lora', serif;
+    color: rgb(0, 0, 0);
+}
+
+#title .main-heading {
+    color: transparent;
+    font-size: 20vw;
+    -webkit-text-stroke:  2px #f6efde;
+
+}
+
+p {
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+/* header */
+#title > .view,
+#resume > .view,
+#projects > .view {
+  height: 135vh;
+  background-color: #009FBD;
+}
+
+body {
+  background-color: rgb(246, 239, 222);  
+}
+
+/* navbar */
+
+.nav-link {
+    color: #f6efde;
+}
+.nav-link.active {
+    color: #f6efde;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #f6efde;
+}
+.navbar-nav {
+    --bs-nav-link-hover-color: #77037B;
+}
+
+
+
+/* navbar menu color change to match nav-links */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28246, 239, 222, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler {
+    border-color: rgb(246, 239, 222);
+    color: rgb(246, 239, 222, 0.65);
+}
+
+
+@media (max-width: 740px) {
+#title > .view,
+#projects > .view {
+    height: 130vh;
+  }
+  #title .scribble {
+    height: 17rem;
+    width: 17rem;
+    margin-top: 5rem;
+    
+    }
+    #resume > .view {
+        height: 100vh;
+    } 
+}
+@media (min-width: 800px) and (max-width: 850px) {
+#title > .view,
+#projects > .view {
+    height: 130vh;
+  }
+  #title .scribble {
+    height: 17rem;
+    width: 17rem;
+    margin-top: 5rem;
+   
+    }
+    #resume > .view {
+        height: 100vh;
+    } 
+}
+
+.top-nav-collapse {
+    background: transparent !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+#title .scribble {
+    height: 23rem;
+    width: 23rem;
+}
+
+
+@media (max-width: 991px) {
+#title > .view,
+#projects > .view {
+        height: 130vh;
+  }
+  .navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+    }
+
+    /* Me, Jan scribble responsiveness */
+    #title .scribble {
+        height: 18rem;
+        width: 18rem;
+        margin-top: 5rem;
+    
+        }
+        #title img {
+            margin-right: 6rem;
+            padding-left: 3rem;
+        }
+        #title .main-heading {
+            color: transparent;
+            font-size: 20vw;
+            -webkit-text-stroke:  2px #f6efde;
+            margin-top: 5rem;
+        }   
+#resume > .view {
+    height: 110vh;
+}
+  }
+
+
+#footer {
+    background-color: #241962; 
+} 
+
+ 
+
+
+/* Me, Jan scribble responsiveness */
+  @media (min-width: 992px) and (max-width: 1200px) {
+  #title .scribble {
+    height: 19rem;
+    width: 19rem;
+    margin-top: 5rem;
+  }
+  #title img {
+    margin-right: 2rem;
+    padding-left: 1rem;
+}
+  }
+  /* Me, Jan scribble responsiveness */
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    #title .scribble {
+      height: 19rem;
+      width: 19rem;
+      margin-top: 3rem;
+    }
+    #title img {
+      margin-right: 2rem;
+      padding-left: 1rem;
+  }
+}
+/* Resume */
+
+#resume .bd-example {
+    margin-top: 0;
+
+}
+
+#resume .main-heading {
+    color: transparent;
+    font-size: 20vw;
+    -webkit-text-stroke:  2px #f6efde;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* Resume accordian */
+
+.accordion-item {
+    color: #f6efde;
+    background: transparent;
+    border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+    --bs-accordion-border-width: 0.25rem;
+    --bs-accordion-border-color: #241962;
+}
+
+#resume-part2 .accordion-item {
+    color: #000;
+    border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+    --bs-accordion-border-width: 0.15rem;
+    --bs-accordion-border-color: #000;
+}
+
+.accordion-button.collapsed {
+    color: #241962;
+    font-weight: 700;
+    background: transparent;
+}
+
+#resume-part2 .accordion-button.collapsed {
+    color: #000;
+    font-weight: 700;
+    background: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #241962;
+    background: transparent;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+    --bs-accordion-border-width: 0.25rem;
+    --bs-accordion-border-color: #241962;
+}
+
+#resume-part2 .accordion-button:not(.collapsed) {
+    color: #000;
+    background: transparent;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+    --bs-accordion-border-width: 0.1rem;
+    --bs-accordion-border-color: #000;
+}
+
+/* Projects */
+
+#projects > .view {
+    height: 120vh;
+}
+#projects .main-heading {
+    color: transparent;
+    font-size: 20vw;
+    -webkit-text-stroke:  2px #f6efde;
+}
+
+#projects-part2 .accordion-item {
+    color: #000;
+    border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+    --bs-accordion-border-width: 0.15rem;
+    --bs-accordion-border-color: #000;
+}
+
+#projects-part2 .accordion-button.collapsed {
+    color: #000;
+    font-weight: 700;
+    background: transparent;
+}
+
+#projects-part2 .accordion-button:not(.collapsed) {
+    color: #000;
+    background: transparent;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+    --bs-accordion-border-width: 0.1rem;
+    --bs-accordion-border-color: #000;
+}
+
+/* Interests */
+
+#interests .main-heading {
+    color: transparent;
+    font-size: 20vw;
+    -webkit-text-stroke:  2px #f6efde;
+}
+
+#interests .row {
+    margin-bottom: 50px;
+}
+
+
+/* Contact Me */
+
+
+#contact .main-heading  {
+    color: transparent;
+    font-size: 20vw;
+    -webkit-text-stroke:  2px #f6efde;
+}
+
+#contact .card-title {
+    font-size: 2vw;
+    
+}
+
+@media (max-width: 991px) {
+    #contact .card-title {
+        font-size: 23px;
+    }
+}
+
+#contact .card {
+    margin-bottom: 50px;
+    background-color: #f6efde50;
+    border-color: #241962;
+
+}
+
+#contact .btn {
+    background-color: #241962;
+    color: #f6efde;
+}
+
+
+#resume .collapse > ul,
+#projects .collapse > ul,
+#interests .collapse > ul,
+#contact .collapse > ul {
+    position: relative !important;
+    
+}
